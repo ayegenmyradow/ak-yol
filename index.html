@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK-YOL expand your power</title>
+    <link rel='stylesheet' href='assets/css/fonts.css' type='text/css' />
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #222d41;
+            color: #000;
+            font-family: Open Sans, Arial;
+            overflow: hidden;
+        }
+
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background-image: url(assets/static/index11.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            /* background-position: -50% 100%; */
+            /* background-position: center; */
+        }
+
+        .img-wrap {
+            display: block;
+            position: relative;
+            width: 526px;
+            height: 427px;
+            -webkit-clip-path: polygon(45% 0, 100% 0, 55% 100%, 0 100%);
+            clip-path: polygon(45% 0, 100% 0, 55% 100%, 0 100%);
+            margin: 0;
+            z-index: 1;
+            transition: all 300ms linear !important;
+        }
+
+        .img-wrap .img {
+            display: block;
+            width: 100%;
+            height: 384px;
+            transition: all 300ms ease;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%) translateZ(0);
+        }
+
+        /* .img-wrap:hover,  */
+        .active {
+            scale: 1.6;
+        }
+
+        .title {
+            padding-left: 15%;
+            color: #fff;
+            text-shadow: 2px 2px #000;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .main-content {
+            z-index: 1;
+        }
+
+        .over {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .wrapper {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: #5e83fa;
+            mix-blend-mode: multiply;
+            z-index: 1005;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .wrapper2{
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: #e40000;
+            mix-blend-mode: multiply;
+            z-index: 1005;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="over"></div>
+        <div class="main-content">
+            <a id="oil" target="_blank" href="ak-yol.html" class="img-wrap active">
+                <div class="img">
+                    <img src="assets/main-oil.jpg" width="527" height="384" alt="Logo">
+                    <div class="wrapper2"></div>
+                </div>
+            </a>
+            <div class="title"> Oil and Gas </div>
+        </div>
+        <div class="main-content" style="margin-left: -140px;">
+            <a id="awto" target="_blank" href="akyol.html" class="img-wrap">
+                <div class="img">
+                    <img src="assets/main-car3.jpg" width="527" height="384" alt="logo">
+                    <div class="wrapper"></div>
+                </div>
+            </a>
+            <div class="title"> Auto Services </div>
+        </div>
+    </div>
+
+    <script>
+        var oil = document.getElementById("oil")
+        var awto = document.getElementById("awto")
+
+
+        oil.addEventListener("mouseover", function(evt){
+            oil.classList.add("active")
+            awto.classList.remove("active")
+        })
+
+
+        awto.addEventListener("mouseover", function(evt){
+            awto.classList.add("active")
+            oil.classList.remove("active")
+        })
+
+
+    </script>
+</body>
+
+</html>

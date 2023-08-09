@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK-YOL expand your power</title>
+
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet" />
+    <!-- <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="assets/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="assets/fontawesome/css/solid.css" rel="stylesheet" />
+    <link href="assets/fontawesome/css/v4-font-face.css" rel="stylesheet" /> -->
+
+
+    <link rel='stylesheet' href='assets/css/fonts.css' type='text/css' />
+    <link rel='stylesheet' href='assets/css/animate.min.css' type='text/css' />
+
+    <!-- swiper js modules -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <!-- swiper js modules end of line -->
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body>
+
+    <div id="nav-wrapper" class="navigation-content">
+        <div style="height: 73px;"></div>
+
+        <!-- here top navigation start line -->
+        <nav id="navigation">
+            <div class="container">
+                <div class="logo">
+                    <a href="#" id="logo">
+                        <img src="assets/static/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <ul class="header-menu clearfix">
+                    <li><a href="akyol.html#advantages">Advantages</a></li>
+                    <li><a href="akyol.html#services">Services</a></li>
+                    <li><a href="akyol.html#history">History</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+
+
+    <form id="root" class="contact-info">
+        <div class="container">
+            <h1>CONTACT US</h1>
+            <p>Please complete the form below and your request will be routed to the appropriate person within our
+                organization.</p>
+
+            <div class="cgrid-content">
+                <div>
+                    <p>First Name: <span>*</span></p>
+                    <div>
+                        <input placeholder="" />
+                    </div>
+                </div>
+
+
+                <div>
+                    <p>Last Name: <span>*</span></p>
+                    <div>
+                        <input placeholder="" />
+                    </div>
+                </div>
+
+
+                <div>
+                    <p>Phone: <span>*</span></p>
+                    <div>
+                        <input placeholder="" />
+                    </div>
+                </div>
+
+
+                <div>
+                    <p>Email: <span>*</span></p>
+                    <div>
+                        <input placeholder="" />
+                    </div>
+                </div>
+
+                <div>
+                    <p>Company: <span>*</span></p>
+                    <div>
+                        <input placeholder="" />
+                    </div>
+                </div>
+
+                <div>
+                    <p>Message: <span>*</span></p>
+                    <div>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-submit">
+                <input type="submit" value="SUBMIT">
+            </div>
+        </div>
+    </form>
+
+
+    <div style="padding: 20px 0; font-size: 12px" id="footer-wrapper">
+        <div class="container">Copyright © 2022. AK-YOL - All rights reserved</div>
+    </div>
+    <script>
+        var $ = jQuery, num = 0;
+        $(window).bind("scroll", function () {
+            $(window).scrollTop() > num ? $("#navigation").addClass("fixed") : $("#navigation").removeClass("fixed");
+        });
+
+
+        const availableContentHeight = window.innerHeight - ($("#nav-wrapper").height() + $("#footer-wrapper").height());
+        $("#root").css('minHeight', availableContentHeight)
+
+    </script>
+
+</body>
+
+
+
+
+</html>
